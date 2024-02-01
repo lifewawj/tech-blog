@@ -1,0 +1,8 @@
+# Ignores the challenge folder and its content(s)
+challenge
+
+# Ignores SECRETS
+.env
+
+# Ignores the node_modules folder
+node_modules
