@@ -1,0 +1,43 @@
+/* MAIN */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    background: #eee;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-self: flex-start;
+}
+
+.logo:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.category {
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none;
+}
+
+.category li {
+    margin-left: 10px;
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* HOMEPAGE */
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
