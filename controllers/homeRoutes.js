@@ -29,7 +29,6 @@ router.get('/login', (req, res) => {
     }
 });
 
-
 // Logout Route
 router.get('/logout', (req, res) => {
     try {
@@ -39,5 +38,13 @@ router.get('/logout', (req, res) => {
     }
 });
 
+// Sign-Up Route
+router.get('/signup', (req, res) => {
+    try {
+        res.render('signup', { title: 'Tech Blog | Sign-Up'})
+    } catch (err) {
+        res.status(500).json(err)
+    }
+});
 
 module.exports = router;
