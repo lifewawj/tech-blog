@@ -1,8 +1,13 @@
-// NAV BAR Category(s)
+// MAIN & NAV BAR Category(s) 
+const logo = document.getElementById('logo')
 const homeBtn = document.getElementById('home');
 const dashboardBtn = document.getElementById('dashboard');
 const loginBtn = document.getElementById('login');
 const logoutBtn = document.getElementById('logout');
+
+logo.addEventListener('click', () => {
+    window.location.href = "/"
+});
 
 homeBtn.addEventListener('click', () => {
     window.location.href = "/"
