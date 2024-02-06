@@ -41,3 +41,25 @@ li:hover {
     align-items: center;
     flex-direction: column;
 }
+
+/* LOGIN & SIGN-UP */
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.box button {
+    margin-top: 10px;
+    padding: 0.5rem;
+
+    cursor: pointer;
+}
+
+.box input {
+    padding: 0.5rem;
+}
+
+h4:hover {
+    color: #eee;
+    cursor: pointer;
+};
