@@ -1,45 +1,39 @@
-// MAIN & NAV BAR Category(s) 
-const logo = document.getElementById('logo')
-const homeBtn = document.getElementById('home');
-const dashboardBtn = document.getElementById('dashboard');
-const loginBtn = document.getElementById('login');
-const logoutBtn = document.getElementById('logout');
+document.addEventListener('DOMContentLoaded', () => {
 
-logo.addEventListener('click', () => {
-    window.location.href = "/"
-});
+    // MAIN & NAV BAR Category(s) 
+    const logo = document.getElementById('logo');
+    const homeBtn = document.getElementById('home');
+    const dashboardBtn = document.getElementById('dashboard');
+    const loginBtn = document.getElementById('login');
+    const logoutBtn = document.getElementById('logout');
+    const goLogin = document.getElementById('goLogin');
+    const goSignUp = document.getElementById('goSignUp');
 
-homeBtn.addEventListener('click', () => {
-    window.location.href = "/"
-});
+    logo.addEventListener('click', () => {
+        window.location.href = "/";
+    });
 
-dashboardBtn.addEventListener('click', () => {
-    window.location.href = "/dashboard"
-});
+    homeBtn.addEventListener('click', () => {
+        window.location.href = "/";
+    });
 
-loginBtn.addEventListener('click', () => {
-    window.location.href = "/login"
-});
+    dashboardBtn.addEventListener('click', () => {
+        window.location.href = "/dashboard";
+    });
 
-logoutBtn.addEventListener('click', () => {
-    // window.location.href = "/logout"
-    const result = confirm('Are you sure you want to log out?')
+    loginBtn.addEventListener('click', () => {
+        window.location.href = "/login";
+    });
 
-    if (result) {
-        window.location.href = "/logout"
-    };
-});
+    logoutBtn.addEventListener('click', () => {
+        const result = confirm('Are you sure you want to log out?');
+        if (result) {
+            window.location.href = "/logout";
+        }
+    });
 
-// Login / Sign-Up page
-const goSignUp = document.getElementById('login_to_signup');
-
-goSignUp.addEventListener('click', () => {
-    window.location.href = "/signup"
-});
-
-
-const goLogin = document.getElementById('signup_to_login');
-
-goLogin.addEventListener('click', () => {
-    window.location.href = "/login"
+    // Login / Sign-Up page
+    goSignUp.addEventListener('click', () => {
+        window.location.href = "/signup";
+    });
 });
