@@ -37,3 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = "/signup";
     });
 });
+
+// TODO:
+// Sign Up functionality
+// Create a function that takes the username, and password from the user's req
+// Through an if statement check if the username and password are available waiting for the user's reponse
+// Through that will than stringify and store their response in a JSON body format
+
+
+// Assign the sign-up form to an addEventListener 
+const signUpForm = document.querySelector('.signup-form')
+signUpForm.addEventListener('submit', signupFormHandler);

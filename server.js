@@ -15,6 +15,28 @@ const hbs = exphbs.create({
     defaultLayout: 'main', // Selects the main.handlebars file for its html layout
 });
 
+const session = require('express-session');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const SECRET = require('dotenv').config(); // Grabs the SECRET variable created in the .env file
+
+// Setting up sessions
+const sess = {
+    secret: SECRET, // the password in accessing sessions
+    cookie: {
+        maxAge: 300000,
+        httpOnly: true,
+        secure: false,
+        sameSite: 'strict',
+    },
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize
+    })
+};
+
+app.use(session(sess)); // tells our server to use sessions
+
 // The following two lines of code are setting Handlebars.js as the default template engine.
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
