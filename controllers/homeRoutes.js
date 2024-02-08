@@ -1,4 +1,5 @@
 const router = require('express').Router();
+// homeRoutes.js file holds all the html & handlebars page routes, What the user can see on the View folder
 
 
 // Homepage Route
