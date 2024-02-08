@@ -52,8 +52,6 @@ app.use('/public', express.static('public', { 'extensions': ['css'] }));
 const routes = require('./controllers/homeRoutes'); // Create a routes const var to GRAB all the exported router from controllers
 app.use(routes);
 
-// Seeds the Server from the techBlog Database
-
 
 // Syncs our SQL db to our server, and inits our server
 sequelize.sync({ force: false }).then(() => {
