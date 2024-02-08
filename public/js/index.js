@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const dashboardBtn = document.getElementById('dashboard');
     const loginBtn = document.getElementById('login');
     const logoutBtn = document.getElementById('logout');
-    const goLogin = document.getElementById('goLogin');
     const goSignUp = document.getElementById('goSignUp');
 
     logo.addEventListener('click', () => {
