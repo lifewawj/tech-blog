@@ -63,3 +63,9 @@ h4:hover {
     color: #eee;
     cursor: pointer;
 };
+
+/* DASHBOARD */
+.dashboard {
+    display: flex;
+    flex-direction: row;
+}
