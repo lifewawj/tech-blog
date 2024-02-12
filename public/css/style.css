@@ -24,11 +24,13 @@
     list-style-type: none;
 }
 
-.category li {
+.category a {
+    color: black;
     margin-left: 10px;
+    text-decoration: none;
 }
 
-li:hover {
+a:hover {
     color: white;
     cursor: pointer;
 }

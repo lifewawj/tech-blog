@@ -18,11 +18,10 @@ const hbs = exphbs.create({
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 require('dotenv').config(); // Requires ALL the variable(s) created in the .env file
-const { SESSION_SECRET } = process.env; 
 
 // Setting up sessions
 const sess = {
-    secret: SESSION_SECRET, // the password in accessing sessions
+    secret: process.env.COOKIE_SECRET, // the password in accessing sessions
     cookie: {
         maxAge: 300000,
         httpOnly: true,
