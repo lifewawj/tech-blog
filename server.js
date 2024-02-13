@@ -45,7 +45,7 @@ app.set('view engine', 'handlebars');
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/public', express.static('public', { 'extensions': ['css'] }));
+app.use("/public", express.static(path.join(__dirname, 'public')));
 
 // Server Routes
 const routes = require('./controllers/homeRoutes'); // Create a routes const var to GRAB all the exported router from controllers
